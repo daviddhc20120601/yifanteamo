@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=GB2312"/>
+<script type="text/javascript" src="/yifanteamo/shake.js"></script>
+<style> 
+.abc{ height:300px; border:0px solid #000; margin:0 auto} 
+@media screen and (min-width: 1201px) { .abc {width: 1200px} } 
+@media screen and (max-width: 1200px) { .abc {width: 900px} } 
+@media screen and (max-width: 900px) { .abc {width: 200px;} } 
+@media screen and (max-width: 500px) { .abc {width: 100px;} } 
+</style> 
+</head>
+<body>
+<div class="abc">
+<fieldset style="margin:10px;border:2px groove;font size=50" align=cente><legend><strong>向全世界宣布</strong></legend>
+<section>
+<h1 style="text-align:center">yifan te amo </h1>
+<h2 style="text-align:right">--by 陈海栋</h2>
+</section>
+</fieldset>
+</div>
+<script type="text/javascript">
+window.onload = function() {
+	
+    //create a new instance of shake.js.
+    var myShakeEvent = new Shake({
+        threshold: 15
+    });
+
+    // start listening to device motion
+    myShakeEvent.start();
+
+    // register a shake event
+    window.addEventListener('shake', shakeEventDidOccur, false);
+
+    //shake event callback
+    function shakeEventDidOccur () {
+
+        //put your own code here etc.
+        window.location.href='/yifanteamo/confession.html';
+
+    }
+};
+</script>
+</body>
+</html>
